@@ -1,0 +1,449 @@
+.border {
+	border: 1px solid red;
+}
+
+/* ================================================
+                DEFAULT VALUES:
+
+Font Family    : Poppins
+
+Jet            : #343434     
+Smoky Black    : #14080E     
+Kombu Green    : #36453B
+White          : #fff        (Text With Black Backgrounds)
+Black          : #000
+=================================================== */
+
+/* General CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "poppins", sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+/* ================================================
+                        HOME
+=================================================== */
+
+#home {
+	height: 100%;
+}
+
+#home-cover {
+	height: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("https://source.unsplash.com/xrVDYZRGdw4");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#home-content-box {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+#home-content-box-inner {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#home-header h2 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 20px 0 20px 0;
+}
+
+#home-header blockquote {
+	border: 0;
+}
+
+#home-header blockquote h2:before {
+	content: "\201C";
+	padding-right: 3px;
+}
+#home-header blockquote h2:after {
+	content: "\201D";
+	padding-left: 3px;
+}
+
+#home-header blockquote h2:before,
+#home-header blockquote h2:after {
+	font-style: normal;
+	font-size: 30px;
+}
+
+#home-header cite {
+	color: #BABABA;
+}
+
+#home-btn {
+	padding-left: 20px;
+}
+
+/* ================================================
+                      BUTTONS (Generic)
+=================================================== */
+
+.btn-general {
+	border-width: 2px;
+	border-radius: 0;
+	padding: 12px 26px 12px 26px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.btn-white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn-white:hover, .btn-white:focus {
+	background-color: #fff;
+	color: #14080E;
+}
+
+.btn-black {
+	border-color: #343434;
+	color: #343434;
+}
+
+.btn-black:hover, .btn-black:focus {
+	background-color: #343434;
+	color: #BABABA;
+}
+
+#description .owl-prev {
+	border: 1px solid #592941;
+	padding: 4px !important;
+	color: gray;
+	opacity: 1;
+}
+
+#description .owl-next {
+	border: 1px solid #592941;
+	padding: 4px !important;
+	color: gray;
+	opacity: 1;
+}
+
+#description .disabled {
+	color: #fff;
+	background-color: #343434;
+}
+
+.btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 40px;
+	color: #BABABA;
+	display: none;
+}
+
+.btn-back-to-top:hover {
+	color: #592941;
+}
+
+/* ================================================
+                      ANIMATE
+=================================================== */
+
+#home-cover {
+	-webkit-animation-delay: .2s;
+	        animation-delay: .2s;
+	-webkit-animation-duration: .5s;
+	        animation-duration: .5s;
+}
+
+#home-header {
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	-webkit-animation-duration: .5s;
+	        animation-duration: .5s;
+}
+
+#home-btn {
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+}
+
+/* ================================================
+                   CONTENT (Generic)
+=================================================== */
+
+.content-box {
+	padding: 60px 0 60px 0;
+}
+
+.content-title h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+	color: #14080E;
+}
+
+.content-title-underline {
+	width: 60px;
+	height: 3px;
+	background-color: #592941;
+	margin: 0 auto 30px auto;
+}
+
+/* ================================================
+                        ABOUT
+=================================================== */
+
+.flex {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.icono-about {
+	padding: 20px 20px;
+	text-align: center;
+	font-size: 5rem;
+}
+
+.icono-about i {
+	color: #343434;
+}
+
+.parrafos-about {
+	padding: 20px 20px;
+	color: #343434;
+	text-align: left;
+}
+
+@media only screen and (min-width: 1000px) {
+	.parrafos-about {
+		margin-right: 15%;
+	}
+}
+/* ================================================
+                     PORTFOLIO
+=================================================== */
+
+.portfolio-margin {
+	margin-top: 30px;
+}
+
+.portfolio-element {
+	margin: 0 15px;
+}
+
+#portfolio div.content-box {
+	margin-bottom: 90px;
+}
+
+/* ================================================
+                     		CONTACT
+=================================================== */
+
+footer {
+	margin: 30px 0;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+.contact-margin {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+#contact-left {
+	display: inline-block;
+	padding: 0 20px;
+	margin: 40px auto;
+}
+
+#contact-left h3 {
+	font-family: "pacifico";
+	margin-bottom: 10px;
+}
+
+#tarjeta {
+	text-align: center;
+}
+
+.social-list li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	margin-top: 12px;
+}
+
+.social-icon i {
+	font-size: 30px;
+	color: #343434;
+}
+
+.social-icon i:hover {
+	font-size: 30px;
+	color: #596869;
+}
+
+.contact-underline-left {
+	width: 228px;
+	height: 3px;
+	background-color: #592941;
+	margin: 0;
+}
+
+form .form-control {
+	border-radius: 0;
+	border-color: #596869;
+	padding: 8px 16px;
+	margin-bottom: 10px;
+}
+
+/* ================================================
+                     NAVIGATION
+=================================================== */
+
+.navbar {
+	padding: 5px 0;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.navbar-toggle {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid #fff;
+	border-radius: 1;
+}
+
+.navbar-toggle:hover {
+	background-color: #222725;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-brand > span {
+	color: #F3EFF5;
+	font-family: "pacifico";
+}
+
+.mg-top-nav {
+	background: rgba(8,7,5,0.9);
+	padding: 5px 0;
+}
+
+.mg-top-nav-2 .navbar-collapse ul>li>a:hover {
+	color:#000;
+}
+
+.mg-top-nav-2 .navbar-collapse ul>li>a:focus {
+	color:#000;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.navbar-nav > li > a {
+	color: #F3EFF5;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+	color: #898989;
+	background: none;
+}
+
+.mg-top-nav ul.navbar-nav > li.active > a {
+	color: #899878;
+	background: none;
+}
+
+/* ================================================
+                     RESPONSIVE
+=================================================== */
+
+@media only screen and (max-width: 400px) {
+	body #home-cover {	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("https://source.unsplash.com/xrVDYZRGdw4");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: auto;
+	width: 100%;
+}
+}
+
+@media (max-width: 554px) {
+	.contact-margin {
+		margin-top: 0;
+	}
+	#contact-left {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		background: rgba(8,7,5,0.9);
+		padding: 5px 0;
+	}
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a:focus {
+	color: #898989;
+	}
+}
+#home footer {
+	margin-bottom: 0;
+}
+#home blockquote {
+	margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+	
+	/* 	Heading */
+	#home-header blockquote h2 {
+		font-size: 25px;
+	}
+	
+	/* 	About */
+	.icono-about i {
+		font-size: 3.5em;
+	}
+	
+	
+}
+
+@media (max-width: 276px) {
+	.navbar-header>a>span {
+		font-size: 16px;
+	}
+}
